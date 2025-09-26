@@ -1,0 +1,124 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #a0c4ff, #d4e4ff); /* Soft purple gradient */
+}
+
+.login-container {
+    width: 100%;
+    max-width: 380px;
+    padding: 40px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    border: 2px solid #00b4d8; /* Teal border */
+}
+
+.login-container:hover {
+    transform: scale(1.03); /* Slight scale effect on hover */
+}
+
+h1 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #0077b6; /* Dark teal heading */
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    outline: none;
+    background-color: #f7f7f7; /* Light gray background */
+    transition: all 0.3s ease;
+}
+
+/* Input Focus Effect */
+.input-group input:focus {
+    border-color: #00b4d8; /* Teal border on focus */
+    background-color: #e0f7fa; /* Light teal background */
+    box-shadow: 0 0 6px rgba(0, 180, 216, 0.4); /* Teal glow */
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    background-color: #00b4d8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #009bb0;
+    transform: translateY(-2px); /* Lift the button slightly on hover */
+    box-shadow: 0 4px 12px rgba(0, 180, 216, 0.3); /* Teal shadow effect */
+}
+
+.error-message {
+    color: #ff3333;
+    background-color: #ffe6e6;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.register-link {
+    font-size: 14px;
+    color: #333;
+}
+
+.register-link a {
+    color: #00b4d8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.register-link a:hover {
+    color: #0077b6;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .login-container {
+        margin: 20px;
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+}
